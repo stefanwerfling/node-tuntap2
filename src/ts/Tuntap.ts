@@ -1,6 +1,8 @@
 import { TuntapBase } from './TuntapBase.js'
 import { TuntapI } from './TuntapI.js';
 
+
+// @ts-ignore
 export class Tuntap extends TuntapBase implements TuntapI {
 
     writableNeedDrain: boolean = false;
@@ -574,7 +576,4 @@ export class Tuntap extends TuntapBase implements TuntapI {
         return this.writeStream.writableFinished;
     }
 
-    compose<T extends NodeJS.ReadableStream>(stream: ((source: any) => void) | T | Iterable<T> | AsyncIterable<T>, options?: { signal: AbortSignal; } | undefined): T {
-        throw new Error('Method not implemented.');
-    }
 }

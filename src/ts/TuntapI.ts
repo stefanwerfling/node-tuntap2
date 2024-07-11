@@ -1,9 +1,10 @@
-import { Duplex} from "stream";
+import {Duplex} from "stream";
 
 /**
  * basic tuntap interface
  */
  export interface TuntapI extends Duplex {
+
     /**
      * the name of this tun/tap device. 
      * This will be generated.

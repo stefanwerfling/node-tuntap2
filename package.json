@@ -54,7 +54,7 @@
   "devDependencies": {
     "@types/jmespath": "^0.15.0",
     "@types/mocha": "^10.0.1",
-    "@types/node": "^18.17.15",
+    "@types/node": "^20.14.10",
     "coverage-badge-creator": "^1.0.18",
     "inet_xtoy": "^1.2.5",
     "mocha": "^10.2.0",
