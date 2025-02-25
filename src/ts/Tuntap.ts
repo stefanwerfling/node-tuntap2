@@ -102,10 +102,10 @@ export class Tuntap extends TuntapBase implements TuntapI {
      *
      * Recommend: call `release()` and use once('close',callback);
      * @param {Error} error this argument will be ignored
-     * @param {(error: Error) => void} callback will be called after tuntap devices successfully closed.
+     * @param {() => void} callback will be called after tuntap devices successfully closed.
      * @memberof Tuntap
      */
-    _destroy(error: Error, callback: (error: Error) => void): void {
+    _destroy(error: Error, callback: () => void): void {
         this.readStream.once('close', callback);
         this.release();
     }
